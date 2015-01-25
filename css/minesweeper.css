@@ -1,6 +1,15 @@
+body { 
+ margin: 0px !important;   
+}
+
+.game-container {
+    margin: auto 0;
+    position: relative;
+}
+
 .ms-game {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     box-shadow: 2px 2px 10px 2px darkgray;
     margin: 0 auto;
     position: relative;
@@ -9,6 +18,15 @@
 .ms-game .cell {
     position: absolute;
     background: rgb(219, 219, 219);
-    border-radius: 6px;
+    border-radius: 3px;
     border: 1px solid gray;
+}
+
+.ms-game .cell-hidden:hover {
+    background: rgb(128, 128, 128);
+    border: 1px solid black;
+}
+
+.ms-game .mine-hidden{ 
+    background: red;
 }
